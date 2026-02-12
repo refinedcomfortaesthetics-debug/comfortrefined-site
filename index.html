@@ -3,206 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refined Comfort Aesthetics | Electrolysis & Skincare</title>
+    
+    <title>Refined Comfort Aesthetics | Electrolysis & Skincare New Braunfels & San Antonio</title>
+    <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, San Antonio, Gruene, Canyon Lake, and San Marcos.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Refined Comfort Aesthetics",
+      "image": "https://comfortrefined.com/media/courtney-profile.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1245 Gruene Rd",
+        "addressLocality": "New Braunfels",
+        "addressRegion": "TX",
+        "postalCode": "78130",
+        "addressCountry": "US"
+      },
+      "telephone": "+15126607522",
+      "url": "https://comfortrefined.com",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "09:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "08:00", "closes": "15:00" }
+      ],
+      "areaServed": ["New Braunfels", "San Antonio", "Canyon Lake", "San Marcos", "Seguin", "Bexar County", "Comal County", "Guadalupe County", "Hays County"]
+    }
+    </script>
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --sage: #8da07a;
-            --sage-glow: rgba(141, 160, 122, 0.15);
-            --rose-clay: #d4a373; /* Warmer accent */
-            --champagne: #fdf8f3;
-            --text: #3a3a3a;
+            --sage: #9caf88;
+            --linen: #fdfaf7;
+            --text: #4a4a4a;
             --white: #ffffff;
+            --glass: rgba(255, 255, 255, 0.95);
+            /* Pretty Accents */
+            --rose-clay: #d4a373;
+            --champagne: #f9f3ee;
         }
 
-        body { 
-            margin: 0; 
-            font-family: 'Open Sans', sans-serif; 
-            background: linear-gradient(-45deg, #fdfaf7, #f7f1eb, #fdfaf7);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: var(--text); 
-            line-height: 1.7; 
-            padding-bottom: 80px; 
-        }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background-color: var(--linen); color: var(--text); line-height: 1.6; padding-bottom: 80px; }
+        h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+        .top-bar { background: var(--sage); color: white; text-align: center; padding: 8px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 
-        h1, h2, h3, .logo { font-family: 'Playfair Display', serif; font-weight: 400; letter-spacing: 0.5px; }
+        header { position: sticky; top: 0; background: var(--glass); backdrop-filter: blur(10px); padding: 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid var(--sage); }
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; color: var(--sage); text-decoration: none; }
 
-        /* HEADER & TOP BAR */
-        .top-bar { background: var(--sage); color: white; text-align: center; padding: 10px; font-size: 0.75rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
-
-        header { 
-            position: sticky; top: 0; 
-            background: rgba(255, 255, 255, 0.8); 
-            backdrop-filter: blur(15px); 
-            padding: 15px 25px; 
-            display: flex; justify-content: space-between; align-items: center; 
-            z-index: 1000; 
-            border-bottom: 1px solid var(--sage-glow);
-        }
-        .logo { font-size: 1.4rem; font-weight: 700; color: var(--sage); text-decoration: none; }
-
-        /* HERO SECTION */
         .hero { 
-            height: 70vh; 
-            background: linear-gradient(rgba(255,255,255,0.2), rgba(212, 163, 115, 0.1)), url('media/hero-banner-upscale.png'); 
+            height: 65vh; 
+            background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('media/hero-banner-upscale.png'); 
             background-size: cover; 
             background-position: center; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; 
-            text-align: center; color: #1a1a1a; padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            color: #000000; 
+            padding: 20px; 
         }
         .hero h1 { 
-            font-size: clamp(1.8rem, 5vw, 3.2rem); 
+            font-size: 2.8rem; 
             margin: 0; 
-            text-shadow: 0 4px 20px rgba(255,255,255,0.6); 
-            font-style: italic;
+            text-shadow: 1px 1px 15px rgba(255,255,255,0.9); 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            line-height: 1.2; 
         }
         .hero p { 
-            font-size: 1rem; margin-top: 20px; letter-spacing: 3px; 
-            font-weight: 400; text-transform: uppercase; color: var(--text);
+            font-size: 1.1rem; 
+            margin-top: 15px; 
+            letter-spacing: 1px; 
+            font-weight: 600; 
+            text-transform: uppercase;
+            text-shadow: 1px 1px 10px rgba(255,255,255,0.8);
         }
 
-        /* BIO SECTION */
-        .bio-section { padding: 100px 20px; text-align: center; }
-        .profile-img { 
-            width: 240px; height: 240px; border-radius: 50%; 
-            border: 8px solid var(--white); object-fit: cover; 
-            margin-bottom: 30px; 
-            box-shadow: 0 15px 35px var(--sage-glow); 
+        @media (max-width: 600px) {
+            .hero { height: 50vh; }
+            .hero h1 { font-size: 1.6rem; }
+            .hero p { font-size: 0.85rem; }
         }
 
-        /* INFO CARDS */
-        .info-grid { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
+        .bio-section { padding: 80px 20px; background: var(--white); text-align: center; }
+        .profile-img { width: 220px; height: 220px; border-radius: 50%; border: 6px solid var(--linen); object-fit: cover; margin-bottom: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+        /* PRETTIER: Results Gallery Styling */
+        .results-gallery { padding: 80px 20px; background: var(--white); text-align: center; border-top: 1px solid var(--champagne); }
+        .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1000px; margin: 40px auto 0; }
+        @media (min-width: 768px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
+        .transformation-card { background: var(--champagne); padding: 15px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+        .transformation-card:hover { transform: scale(1.02); }
+        .image-comparison { display: flex; gap: 10px; justify-content: center; }
+        .image-comparison img { width: 48%; border-radius: 20px; aspect-ratio: 3/4; object-fit: cover; border: 3px solid var(--white); }
+
+        .info-grid { display: grid; grid-template-columns: 1fr; gap: 30px; padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
         @media (min-width: 768px) { .info-grid { grid-template-columns: 1fr 1fr; } }
+        .info-card { background: white; padding: 35px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid rgba(156, 175, 136, 0.2); }
+        .info-card h3 { color: var(--rose-clay); margin-top: 0; border-bottom: 1px solid var(--linen); padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; font-size: 1.1rem; }
+        .info-card p { margin: 8px 0; font-size: 0.95rem; display: flex; justify-content: space-between; }
+
+        .review-slider { background: var(--sage); color: white; padding: 80px 0; text-align: center; }
+        .carousel-wrapper { position: relative; max-width: 1200px; margin: 0 auto; }
+        .review-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 20px 40px; scrollbar-width: none; }
+        .review-carousel::-webkit-scrollbar { display: none; }
+        .review-card { flex: 0 0 280px; scroll-snap-align: center; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
         
-        .info-card { 
-            background: rgba(255, 255, 255, 0.7); 
-            padding: 45px; 
-            border-radius: 40px; 
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--white);
-            box-shadow: 0 10px 30px rgba(141, 160, 122, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .info-card:hover { transform: translateY(-5px); }
-        .info-card h3 { color: var(--rose-clay); margin-bottom: 25px; text-transform: uppercase; font-size: 1rem; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        .info-card p { margin: 12px 0; font-size: 1rem; }
+        .nav-btn { display: none; position: absolute; top: 50%; transform: translateY(-50%); background: white; color: var(--sage); border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 10; font-size: 1.2rem; }
+        @media (min-width: 1024px) { .nav-btn { display: flex; align-items: center; justify-content: center; } }
+        .prev-btn { left: 15px; } .next-btn { right: 15px; }
 
-        /* REVIEWS */
-        .review-slider { padding: 100px 0; background: var(--sage-glow); text-align: center; }
-        .review-card { 
-            flex: 0 0 300px; scroll-snap-align: center; 
-            background: var(--white); padding: 40px; 
-            border-radius: 30px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
-        }
+        .v64-form { max-width: 500px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .v64-form label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; color: var(--sage); text-transform: uppercase; }
+        .v64-form input, .v64-form select, .v64-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
+        .v64-form button { width: 100%; padding: 18px; background: var(--sage); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-transform: uppercase; }
 
-        /* CONTACT FORM */
-        .v64-form { 
-            max-width: 550px; margin: 0 auto; background: var(--white); padding: 50px; 
-            border-radius: 40px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); 
-        }
-        .v64-form button { 
-            width: 100%; padding: 20px; background: var(--sage); color: white; 
-            border: none; border-radius: 50px; font-weight: 600; cursor: pointer; 
-            letter-spacing: 2px; transition: background 0.3s;
-        }
-        .v64-form button:hover { background: var(--rose-clay); }
-
-        /* ACTION BAR */
-        .action-bar { position: fixed; bottom: 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; background: var(--white); z-index: 2000; border-top: 1px solid #f0f0f0; }
-        .btn { text-decoration: none; padding: 22px; text-align: center; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; }
+        .action-bar { position: fixed; bottom: 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; background: white; z-index: 2000; border-top: 1px solid #eee; }
+        .btn { text-decoration: none; padding: 20px; text-align: center; font-weight: 600; font-size: 0.9rem; }
         .btn-text { background: var(--sage); color: white; }
         .btn-call { color: var(--sage); }
-
-        /* DEV NAV */
-        #dev-nav { position: fixed; bottom: 90px; right: 20px; z-index: 3000; display: flex; gap: 8px; }
-        #dev-nav a { background: #333; color: #fff; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-size: 10px; font-weight: bold; opacity: 0.9; }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">Refined Care • Clinical Results • Hill Country Luxury</div>
+    <div class="top-bar">Serving New Braunfels • San Antonio • Gruene • Canyon Lake</div>
 
     <header>
-        <a href="index.html" class="logo">Refined Comfort</a>
+        <a href="index.html" class="logo">Refined Comfort Aesthetics</a>
         <nav>
-            <a href="services.html" style="font-size: 0.75rem; font-weight: 600; color: var(--sage); text-decoration: none; border: 1.5px solid var(--sage); padding: 10px 20px; border-radius: 50px;">VIEW SERVICES</a>
+            <a href="services.html" style="font-size: 0.8rem; font-weight: 600; color: var(--sage); text-decoration: none; border: 1px solid var(--sage); padding: 8px 15px; border-radius: 50px;">SERVICES</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Beautifully Smooth,<br>Effortlessly You</h1>
-        <p>The Art of Precision Skincare</p>
+        <h1>Glow with Confidence:<br>Transform Your Beauty</h1>
+        <p>Expert Electrolysis & Advanced Body Contouring</p>
     </section>
 
     <section class="bio-section">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush">
-            <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Meet Courtney Bush</h2>
-            <p style="font-size: 1.2rem; color: #666; font-style: italic;">"I believe in enhancing your natural beauty through clinical precision and compassionate care."</p>
+        <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush">
+        <h2>Expert Care by Courtney Bush</h2>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+            With over 10 years of clinical experience, Courtney provides the gold standard in permanent hair removal.
+        </p>
+    </section>
+
+    <section class="results-gallery">
+        <h2 style="text-transform: uppercase; letter-spacing: 2px;">Clinical Transformations</h2>
+        <div class="gallery-grid">
+            <div class="transformation-card">
+                <div class="image-comparison">
+                    <img src="media/before-1.jpg" alt="Before Body Contouring">
+                    <img src="media/after-1.jpg" alt="After Body Contouring">
+                </div>
+                <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">BODY CONTOURING: 4 SESSIONS</p>
+            </div>
+            <div class="transformation-card">
+                <div class="image-comparison">
+                    <img src="media/before-2.jpg" alt="Before Electrolysis">
+                    <img src="media/after-2.jpg" alt="After Electrolysis">
+                </div>
+                <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">ELECTROLYSIS: PERMANENT RESULTS</p>
+            </div>
         </div>
     </section>
 
     <section class="info-grid">
         <div class="info-card">
-            <h3>Boutique Hours</h3>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <p><span>Monday & Tuesday:</span> <span style="float:right;">9:00 - 6:00</span></p>
-                <p><span>Thursday:</span> <span style="float:right;">9:00 - 6:00</span></p>
-                <p><span>Friday & Saturday:</span> <span style="float:right;">8:00 - 3:00</span></p>
-            </div>
+            <h3>Business Hours</h3>
+            <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
+            <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
+            <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
         </div>
         <div class="info-card">
-            <h3>The Experience</h3>
-            <p>Private treatments tailored to your skin’s unique journey. Proudly serving the Gruene, New Braunfels, and San Antonio communities.</p>
-            <p style="color: var(--rose-clay); font-weight: 600; margin-top: 20px;">📍 Inside Gruene Day Spa</p>
+            <h3>Locations Served</h3>
+            <p>Inside Gruene Day Spa, serving clients from across Comal, Hays, Guadalupe, and Bexar County.</p>
         </div>
     </section>
 
     <section class="review-slider">
-        <h2 style="margin-bottom: 40px; color: var(--text);">Loved by Clients</h2>
-        <div class="review-carousel" style="display: flex; overflow-x: auto; gap: 20px; padding: 20px 40px; scroll-snap-type: x mandatory; scrollbar-width: none;">
-            <div class="review-card"><p>"The most professional care I've ever received. Courtney is a true expert."</p><strong>— Sarah J.</strong></div>
-            <div class="review-card"><p>"My skin has never looked better. The body contouring is life-changing!"</p><strong>— Emma W.</strong></div>
-            <div class="review-card"><p>"Highly recommend for anyone seeking permanent hair removal solutions."</p><strong>— Michael P.</strong></div>
+        <h2 style="color: white; margin-bottom: 20px; text-transform: uppercase;">Client Reviews</h2>
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev-btn" onclick="scrollCarousel(-300)">❮</button>
+            <div class="review-carousel" id="reviewScroll">
+                <div class="review-card">
+                    <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                    <p>"Courtney is incredible. I've seen amazing results with my electrolysis."</p>
+                    <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Sarah M.</span>
+                </div>
+                <div class="review-card">
+                    <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                    <p>"The most relaxing wood therapy session. Noticeable results immediately."</p>
+                    <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Jessica R.</span>
+                </div>
+            </div>
+            <button class="nav-btn next-btn" onclick="scrollCarousel(300)">❯</button>
         </div>
     </section>
 
-    <section style="padding: 100px 20px;">
-        <div class="v64-form">
-            <h2 style="text-align: center; margin-bottom: 30px;">Request an Appointment</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Your Name" style="width:100%; padding:15px; margin-bottom:20px; border:1px solid #eee; border-radius:15px;">
-                <input type="email" placeholder="Email Address" style="width:100%; padding:15px; margin-bottom:20px; border:1px solid #eee; border-radius:15px;">
-                <select style="width:100%; padding:15px; margin-bottom:20px; border:1px solid #eee; border-radius:15px;">
-                    <option>Select a Service</option>
-                    <option>Electrolysis</option>
-                    <option>Body Contouring</option>
-                </select>
-                <button type="submit">SEND REQUEST</button>
-            </form>
-        </div>
+    <section class="form-container" style="padding: 80px 20px;">
+        <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase;">Book a Consultation</h2>
+        <form action="https://formspree.io/f/YOUR_ID" method="POST" class="v64-form">
+            <label>Name</label><input type="text" name="name" required>
+            <label>Email</label><input type="email" name="_replyto" required>
+            <label>Primary Concern</label>
+            <select name="service">
+                <option value="electrolysis">Electrolysis</option>
+                <option value="body-contouring">Body Contouring</option>
+                <option value="facials">Clinical Facials</option>
+            </select>
+            <label>Message</label><textarea name="message" rows="4" required></textarea>
+            <button type="submit">SEND INQUIRY</button>
+        </form>
     </section>
 
-    <div class="action-bar">
-        <a href="tel:5126607522" class="btn btn-call">VOICE</a>
-        <a href="sms:+15126607522" class="btn btn-text">TEXT COURTNEY</a>
-    </div>
+    <footer style="padding: 60px 20px; text-align: center; background: var(--white); border-top: 2px solid var(--sage);">
+        <h2 style="color: var(--sage); margin-bottom: 10px;">Refined Comfort Aesthetics</h2>
+        <p>1245 Gruene Rd, New Braunfels, TX 78130</p>
+        <p>(512) 660-7522 | contact@comfortrefined.com</p>
+    </footer>
 
-    <div id="dev-nav">
-        <a href="index.html">V1</a>
+    <div id="dev-nav" style="position: fixed; bottom: 85px; right: 20px; z-index: 3000; display: flex; gap: 8px;">
+        <a href="index.html">V1 HOME</a>
         <a href="option2.html" style="background: var(--rose-clay);">PRETTY V2</a>
         <a href="services.html">PRICING</a>
     </div>
 
+    <div class="action-bar">
+        <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
+        <a href="sms:+15126607522" class="btn btn-text">TEXT COURTNEY</a>
+    </div>
+
+    <script>
+        function scrollCarousel(distance) {
+            document.getElementById('reviewScroll').scrollBy({ left: distance, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
