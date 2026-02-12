@@ -45,9 +45,12 @@
     <style>
         :root {
             --sage: #9caf88;
+            --muted-sage: #8a9b77;
             --linen: #fdfaf7;
             --text: #4a4a4a;
             --white: #ffffff;
+            --refined-earth: #a67c52; /* Deepened from the previous clay */
+            --champagne: #f2e8df; 
         }
 
         body {
@@ -59,11 +62,12 @@
         }
 
         h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--sage); }
+        h2 { color: var(--refined-earth); text-transform: uppercase; letter-spacing: 1px; font-size: 1.4rem; border-bottom: 1px solid var(--champagne); padding-bottom: 10px; }
 
         header {
             padding: 20px;
             background: white;
-            border-bottom: 1px solid rgba(156, 175, 136, 0.1);
+            border-bottom: 2px solid var(--sage);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -91,7 +95,7 @@
             gap: 15px;
         }
 
-        .price-info h3 { margin: 0; font-size: 1.15rem; }
+        .price-info h3 { margin: 0; font-size: 1.15rem; color: var(--text); }
         .price-info p { margin: 5px 0 0; font-size: 0.85rem; color: #777; line-height: 1.4; }
 
         .pricing-tiers { text-align: right; min-width: 105px; }
@@ -110,7 +114,7 @@
         .details-toggle {
             background: none;
             border: none;
-            color: var(--sage);
+            color: var(--refined-earth);
             text-decoration: underline;
             font-size: 0.8rem;
             cursor: pointer;
@@ -138,6 +142,7 @@
             font-style: italic;
             margin-bottom: 20px;
             font-size: 0.9rem;
+            box-shadow: 0 4px 10px rgba(156, 175, 136, 0.3);
         }
 
         .action-bar {
@@ -155,9 +160,11 @@
             letter-spacing: 1px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.15);
             z-index: 1000;
+            transition: transform 0.2s ease;
         }
+        
+        .action-bar:active { transform: scale(0.98); }
 
-        /* REQUIREMENT: Internal Review Navigation Bar */
         #dev-nav { position: fixed; bottom: 85px; right: 20px; z-index: 3000; display: flex; gap: 8px; }
         #dev-nav a { background: #4a4a4a; color: #fff; padding: 10px 14px; border-radius: 5px; text-decoration: none; font-size: 11px; font-weight: 600; }
     </style>
@@ -169,7 +176,7 @@
     </header>
 
     <div class="container">
-        <h1>Services & Pricing</h1>
+        <h1 style="color: var(--sage);">Services & Pricing</h1>
         <p>Expert clinical aesthetics inside Gruene Day Spa.</p>
 
         <div class="promo-banner">
@@ -207,7 +214,7 @@
                 </div>
             </div>
 
-            <h3>Targeted Packages</h3>
+            <h3 style="color: var(--refined-earth); margin-top: 40px; border-bottom: 1px solid var(--champagne); padding-bottom: 5px;">Targeted Packages</h3>
             
             <div class="price-card">
                 <div class="card-header">
@@ -274,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="price-card">
+            <div class="price-card" style="border: 1.5px solid var(--sage);">
                 <div class="card-header">
                     <div class="price-info">
                         <h3>Hill Country Summit</h3>
