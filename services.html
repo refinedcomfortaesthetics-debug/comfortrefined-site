@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing | Refined Comfort Aesthetics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage: #9caf88;
+            --linen: #fdfaf7;
+            --text: #4a4a4a;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--linen);
+            color: var(--text);
+            padding-bottom: 120px;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--sage); }
+
+        header {
+            padding: 20px;
+            background: white;
+            border-bottom: 1px solid rgba(156, 175, 136, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .back-link { text-decoration: none; color: var(--sage); font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; }
+
+        .container { padding: 20px; max-width: 600px; margin: 0 auto; }
+
+        .service-category { margin-top: 40px; }
+        
+        .price-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(156, 175, 136, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .price-info h3 { margin: 0; font-size: 1.15rem; }
+        .price-info p { margin: 5px 0 0; font-size: 0.85rem; color: #777; line-height: 1.4; }
+
+        .pricing-tiers { text-align: right; min-width: 105px; }
+        .single-price { font-weight: 700; color: var(--text); font-size: 1rem; display: block; }
+        .package-price { font-weight: 700; color: var(--sage); font-size: 1rem; display: block; margin-top: 4px; }
+        .label { font-size: 0.6rem; text-transform: uppercase; color: #aaa; letter-spacing: 1px; display: block; }
+
+        .service-image {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .details-toggle {
+            background: none;
+            border: none;
+            color: var(--sage);
+            text-decoration: underline;
+            font-size: 0.8rem;
+            cursor: pointer;
+            padding: 0;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .info-content {
+            display: none;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: #666;
+            border-top: 1px dashed #eee;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .promo-banner {
+            background: var(--sage);
+            color: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .action-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: var(--sage);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">← HOME</a>
+    </header>
+
+    <div class="container">
+        <h1>Services & Pricing</h1>
+        <p>Expert clinical aesthetics inside Gruene Day Spa.</p>
+
+        <div class="promo-banner">
+            Exclusive 6-Session Experience for the Investment of 5
+        </div>
+
+        <div class="service-category">
+            <h2>Body Contouring & Sculpting</h2>
+            
+            <div class="price-card">
+                <img src="media/ultrasonic-body-cavitation.png" class="service-image" alt="Ultrasonic Body Cavitation">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Ultrasonic Cavitation & RF</h3>
+                        <p>Non-invasive fat reduction and skin tightening.</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$180</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$900</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <img src="media/wt.png" class="service-image" alt="Wood Therapy">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Wood Therapy Sculpting</h3>
+                        <p>Traditional wood instruments to break down cellulite.</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$125</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$625</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Targeted Packages</h3>
+            
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Comal Core</h3>
+                        <p>Abdomen, Love Handles & Lower Back</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$180</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$900</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>River Road Renewal</h3>
+                        <p>Full Torso. Front OR Back of Thigh</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$280</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$1,400</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Colorado Curve</h3>
+                        <p>Front, Back & Inner Thigh</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$230</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$1,150</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Lone Star Lift</h3>
+                        <p>Double Chin</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$145</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$725</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Blanco Bliss</h3>
+                        <p>Arms & Bra Bulge</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$180</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$900</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Hill Country Summit</h3>
+                        <p>The Ultimate Sculpt: Colorado Curve & Comal Core</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">1 Session</span><span class="single-price">$410</span>
+                        <span class="label">Pkg of 6</span><span class="package-price">$2,050</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <h2>Electrolysis</h2>
+            <div class="price-card">
+                <img src="media/electrolysis.png" class="service-image" alt="Electrolysis Treatment">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Permanent Hair Removal</h3>
+                        <p>The only FDA-recognized method for total removal.</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">15 Min</span><span class="single-price">$55</span>
+                        <span class="label">30 Min</span><span class="single-price">$75</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <h2>Clinical Skin Rituals</h2>
+            <div class="price-card">
+                <img src="media/nano-infusion.png" class="service-image" alt="Nano-Infusion Facial">
+                <div class="card-header">
+                    <div class="price-info">
+                        <h3>Nano-Infusion Facial</h3>
+                        <p>Painless serum delivery for collagen stimulation.</p>
+                    </div>
+                    <div class="pricing-tiers">
+                        <span class="label">Session</span><span class="single-price">$150</span>
+                    </div>
+                </div>
+                <button class="details-toggle" onclick="toggleInfo('nano-desc')">HOW IT WORKS +</button>
+                <div id="nano-desc" class="info-content">
+                    Nano-Infusion uses microscopic channels to deliver professional serums deep into the skin. It’s a needle-free alternative to microneedling with zero downtime.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="sms:+15126607522?body=Hi Courtney, I'd like to book..." class="action-bar">
+        BOOK AN APPOINTMENT
+    </a>
+
+    <script>
+        function toggleInfo(id) {
+            var x = document.getElementById(id);
+            x.style.display = (x.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
