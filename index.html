@@ -45,13 +45,11 @@
         body { margin: 0; font-family: 'Open Sans', sans-serif; background-color: var(--linen); color: var(--text); line-height: 1.6; padding-bottom: 80px; }
         h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
 
-        /* SEO TOP BAR */
         .top-bar { background: var(--sage); color: white; text-align: center; padding: 8px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 
         header { position: sticky; top: 0; background: var(--glass); backdrop-filter: blur(10px); padding: 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid var(--sage); }
         .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; color: var(--sage); text-decoration: none; }
 
-        /* UPDATED HERO SECTION WITH NEW HIGH-RES BANNER */
         .hero { 
             height: 65vh; 
             background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('media/hero-banner-upscale.png'); 
@@ -62,13 +60,13 @@
             align-items: center; 
             justify-content: center; 
             text-align: center; 
-            color: #000000; /* Darkened text color */
+            color: #000000; 
             padding: 20px; 
         }
         .hero h1 { 
             font-size: 2.8rem; 
             margin: 0; 
-            text-shadow: 1px 1px 15px rgba(255,255,255,0.9); /* Lighter shadow for dark text on image */
+            text-shadow: 1px 1px 15px rgba(255,255,255,0.9); 
             text-transform: uppercase; 
             letter-spacing: 2px; 
             line-height: 1.2; 
@@ -77,9 +75,16 @@
             font-size: 1.1rem; 
             margin-top: 15px; 
             letter-spacing: 1px; 
-            font-weight: 600; /* Increased weight for legibility */
+            font-weight: 600; 
             text-transform: uppercase;
             text-shadow: 1px 1px 10px rgba(255,255,255,0.8);
+        }
+
+        /* REQUIREMENT: Mobile Font Scaling */
+        @media (max-width: 600px) {
+            .hero { height: 50vh; }
+            .hero h1 { font-size: 1.6rem; }
+            .hero p { font-size: 0.85rem; }
         }
 
         .bio-section { padding: 80px 20px; background: var(--white); text-align: center; }
@@ -129,7 +134,7 @@
     </section>
 
     <section class="bio-section">
-        <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush, Licensed Electrologist in New Braunfels & San Antonio TX">
+        <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush, Licensed Electrologist">
         <h2>Expert Care by Courtney Bush</h2>
         <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
             With over 10 years of clinical experience, Courtney provides the gold standard in permanent hair removal and advanced skin treatments for the Texas Hill Country.
@@ -190,7 +195,7 @@
         </div>
     </section>
 
-    <section class="form-container">
+    <section class="form-container" style="padding: 80px 20px;">
         <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase;">Book a Consultation</h2>
         <form action="https://formspree.io/f/YOUR_ID" method="POST" class="v64-form">
             <label>Name</label><input type="text" name="name" required>
@@ -210,8 +215,13 @@
         <h2 style="color: var(--sage); margin-bottom: 10px;">Refined Comfort Aesthetics</h2>
         <p>1245 Gruene Rd, New Braunfels, TX 78130</p>
         <p>(512) 660-7522 | contact@comfortrefined.com</p>
-        <p style="font-size: 0.65rem; color: #ccc; margin-top: 20px;">Proudly serving New Braunfels, San Antonio, and the Hill Country.</p>
     </footer>
+
+    <div id="dev-nav" style="position: fixed; bottom: 85px; right: 20px; z-index: 3000; display: flex; gap: 8px;">
+        <a href="index.html" style="background: #9caf88; color: #fff; padding: 10px 14px; border-radius: 5px; text-decoration: none; font-size: 11px; font-weight: 600;">V1 HOME</a>
+        <a href="option2.html" style="background: #4a4a4a; color: #fff; padding: 10px 14px; border-radius: 5px; text-decoration: none; font-size: 11px; font-weight: 600; opacity: 0.8;">OPTION 2</a>
+        <a href="services.html" style="background: #fdfaf7; color: #9caf88; border: 1px solid #9caf88; padding: 10px 14px; border-radius: 5px; text-decoration: none; font-size: 11px; font-weight: 600;">PRICING</a>
+    </div>
 
     <div class="action-bar">
         <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
