@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Refined Comfort Aesthetics | Electrolysis & Skincare New Braunfels & San Antonio</title>
-    <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, Gruene, San Marcos, Canyon Lake,Seguin,and San Antonio.">
+    <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, Gruene, San Marcos, Canyon Lake, Seguin, and San Antonio.">
     
     <script type="application/ld+json">
     {
@@ -63,7 +63,7 @@
             box-shadow: 0 0 50px rgba(0,0,0,0.15);
             position: relative;
             min-height: 100vh;
-            padding-bottom: 100px; /* Added space so footer isn't hidden by buttons */
+            padding-bottom: 120px;
         }
 
         h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
@@ -156,22 +156,37 @@
         .v64-form input, .v64-form select, .v64-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
         .v64-form button { width: 100%; padding: 18px; background: var(--sage); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-transform: uppercase; }
 
-        /* UPDATED ACTION BAR TO BE FIXED/FLOATING */
+        /* FIXED ACTION BAR - UPDATED FOR STICKY MOBILE BEHAVIOR */
         .action-bar { 
             position: fixed; 
-            bottom: 0; 
-            width: 100%; 
-            max-width: 1000px; /* Stays within your main container width */
+            bottom: 25px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%; 
+            max-width: 400px; 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
             background: white; 
-            z-index: 2000; 
-            border-top: 1px solid #eee; 
-            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+            z-index: 9999; 
+            border-radius: 50px; 
+            overflow: hidden; 
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+            border: 1px solid rgba(156, 175, 136, 0.4);
         }
-        .btn { text-decoration: none; padding: 20px; text-align: center; font-weight: 600; font-size: 0.9rem; }
+
+        .btn { 
+            text-decoration: none; 
+            padding: 18px; 
+            text-align: center; 
+            font-weight: 700; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+        }
+
         .btn-text { background: var(--sage); color: white; }
-        .btn-call { color: var(--sage); }
+        .btn-call { color: var(--sage); background: white; }
 
         .social-container { margin-bottom: 30px; }
         .social-label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text); margin-bottom: 15px; }
@@ -207,7 +222,7 @@
                     With over a decade of dedicated expertise in aesthetics, Courtney Bush has established herself as a leading practitioner for those seeking lasting confidence through precision hair removal and skin rejuvenation.
                 </p>
                 <p style="font-size: 1.1rem;">
-                    As the founder of Refined Comfort Aesthetics, Courtney combines a meticulous, technical approach with a warm, boutique-style environment. Specializing in the 'Gold Standard' of permanent hair removal—Electrolysis—she provides tailored treatments designed to meet the unique needs of every client, from San Antonio to the heart of Gruene.
+                    As the founder of Refined Comfort Aesthetics, Courtney combines a meticulous, technical approach with a warm, boutique-style environment. Specializing in the 'Gold Standard' of permanent hair removal—Electrolysis—she provides tailored treatments designed to meet the unique needs of every client.
                 </p>
             </div>
         </section>
@@ -303,11 +318,9 @@
             <p>1245 Gruene Rd, New Braunfels, TX 78130</p>
             <p>(512) 660-7522 | contact@comfortrefined.com</p>
         </footer>
-
-        <div class="action-bar">
-            <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
-            <a href="sms:+15126607522" class="btn btn-text">TEXT COURTNEY</a>
-        </div>
+    </div> <div class="action-bar">
+        <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
+        <a href="sms:+15126607522" class="btn btn-text">TEXT COURTNEY</a>
     </div>
 
     <script>
