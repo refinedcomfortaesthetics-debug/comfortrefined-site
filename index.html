@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Refined Comfort Aesthetics | Electrolysis & Skincare New Braunfels & San Antonio</title>
+    <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, Gruene, San Marcos, Canyon Lake, Seguin, and San Antonio.">
+    
+    <!-- Favicons - using your favicon-512x512.png -->
+    <link rel="icon" href="/favicon-512x512.png" type="image/png" sizes="512x512">
+    <link rel="icon" href="/favicon.ico" sizes="any"> <!-- Upload a favicon.ico if you generate one -->
+    <link rel="apple-touch-icon" href="/favicon-512x512.png" sizes="180x180">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Refined Comfort Aesthetics",
+      "image": "https://comfortrefined.com/media/courtney-profile.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1245 Gruene Rd",
+        "addressLocality": "New Braunfels",
+        "addressRegion": "TX",
+        "postalCode": "78130",
+        "addressCountry": "US"
+      },
+      "telephone": "+15126607522",
+      "url": "https://comfortrefined.com",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "09:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "08:00", "closes": "15:00" }
+      ],
+      "areaServed": ["New Braunfels", "San Antonio", "Canyon Lake", "San Marcos", "Seguin", "Bexar County", "Comal County", "Guadalupe County", "Hays County"]
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+    :root {
+        --sage: #9caf88;
+        --muted-sage: #8a9b77;
+        --linen: #fdfaf7;
+        --rose-clay: #a67c52;
+        --champagne: #f2e8df;
+        --taupe: #a39384;
+        --soft-gold: #d4af37;
+        --charcoal: #3a3a3a;
+        --glass: rgba(255, 255, 255, 0.92);
+    }
+
+    body { 
+        margin: 0; 
+        font-family: 'Open Sans', sans-serif; 
+        background-color: var(--muted-sage); 
+        color: var(--charcoal); 
+        line-height: 1.6; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 1000px; 
+        background-color: var(--linen); 
+        box-shadow: 0 0 50px rgba(0,0,0,0.15);
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 120px;
+    }
+
+    h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
+
+    .top-bar { background: var(--sage); color: white; text-align: center; padding: 8px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+
+    header { 
+        position: sticky; 
+        top: 0; 
+        background: var(--glass); 
+        backdrop-filter: blur(10px); 
+        padding: 20px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        z-index: 1000; 
+        border-bottom: 2px solid var(--sage); 
+    }
+    .logo { 
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        letter-spacing: 1px; 
+        color: var(--sage); 
+        text-decoration: none; 
+    }
+
+    nav a:focus, button:focus, .btn:focus {
+        outline: 2px solid var(--soft-gold);
+        outline-offset: 2px;
+    }
+
+    .hero { 
+        height: 65vh; 
+        background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('media/hero-banner-upscale.png'); 
+        background-size: cover; 
+        background-position: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        color: var(--charcoal); 
+        padding: 20px; 
+    }
+    
+    .hero h1 { 
+        font-size: 2.8rem; 
+        margin: 0; 
+        text-shadow: 2px 2px 8px rgba(255,255,255,0.9); 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        line-height: 1.1; 
+        color: var(--charcoal);
+    }
+    
+    .hero .script-text {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.4rem;
+        color: var(--charcoal);
+        margin: 10px 0;
+        text-shadow: 1px 1px 12px rgba(255,255,255,0.9);
+        line-height: 1.2;
+    }
+
+    .hero p { 
+        font-size: 1rem; 
+        margin-top: 10px; 
+        letter-spacing: 3px; 
+        font-weight: 600; 
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px rgba(255,255,255,0.8);
+        color: var(--charcoal);
+    }
+
+    @media (max-width: 600px) {
+        .hero { height: 60vh; }
+        .hero h1 { font-size: 1.8rem; }
+        .hero .script-text { font-size: 1.6rem; padding: 0 10px; }
+        .hero p { font-size: 0.75rem; letter-spacing: 1.5px; }
+        .main-container { box-shadow: none; }
+    }
+
+    .bio-section { padding: 80px 20px; background: var(--white); text-align: center; }
+    .profile-img { width: 220px; height: 220px; border-radius: 50%; border: 6px solid var(--linen); object-fit: cover; margin-bottom: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+
+    .results-gallery { padding: 80px 20px; background: var(--white); text-align: center; border-top: 1px solid var(--champagne); }
+    .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1000px; margin: 40px auto 0; }
+    @media (min-width: 768px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
+    .transformation-card { 
+        background: var(--champagne); 
+        padding: 15px; 
+        border-radius: 30px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        transition: transform 0.3s ease; 
+    }
+    .transformation-card:hover { transform: scale(1.02); }
+    .image-comparison { display: flex; gap: 10px; justify-content: center; }
+    .image-comparison img { width: 48%; border-radius: 20px; aspect-ratio: 3/4; object-fit: cover; border: 3px solid var(--white); }
+
+    .info-grid { display: grid; grid-template-columns: 1fr; gap: 30px; padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+    @media (min-width: 768px) { .info-grid { grid-template-columns: 1fr 1fr; } }
+    .info-card { background: white; padding: 35px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid rgba(156, 175, 136, 0.2); }
+    .info-card h3 { color: var(--rose-clay); margin-top: 0; border-bottom: 1px solid var(--linen); padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; font-size: 1.1rem; }
+    .info-card p { margin: 8px 0; font-size: 0.95rem; display: flex; justify-content: space-between; }
+
+    .review-slider { background: var(--sage); color: white; padding: 80px 0; text-align: center; }
+    .carousel-wrapper { position: relative; max-width: 1200px; margin: 0 auto; }
+    .review-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 20px 40px; scrollbar-width: none; }
+    .review-carousel::-webkit-scrollbar { display: none; }
+    .review-card { flex: 0 0 280px; scroll-snap-align: center; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
+    
+    .nav-btn { display: none; position: absolute; top: 50%; transform: translateY(-50%); background: white; color: var(--sage); border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 10; font-size: 1.2rem; }
+    @media (min-width: 1024px) { .nav-btn { display: flex; align-items: center; justify-content: center; } }
+    .prev-btn { left: 15px; } .next-btn { right: 15px; }
+
+    .v64-form { max-width: 500px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .v64-form label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; color: var(--sage); text-transform: uppercase; }
+    .v64-form input, .v64-form select, .v64-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
+    .v64-form button { width: 100%; padding: 18px; background: linear-gradient(135deg, var(--sage), var(--soft-gold)); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-transform: uppercase; transition: all 0.3s ease; }
+    .v64-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); opacity: 0.95; }
+    .v64-form button:active { transform: translateY(0); box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2); }
+
+    .action-bar { 
+        position: fixed; 
+        bottom: 25px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%; 
+        max-width: 400px; 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        background: white; 
+        z-index: 9999; 
+        border-radius: 50px; 
+        overflow: hidden; 
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        border: 1px solid rgba(156, 175, 136, 0.4);
+    }
+
+    .btn { 
+        text-decoration: none; 
+        padding: 18px; 
+        text-align: center; 
+        font-weight: 700; 
+        font-size: 0.85rem; 
+        text-transform: uppercase; 
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-text { 
+        background: linear-gradient(135deg, var(--sage), var(--soft-gold)); 
+        color: white; 
+    }
+    .btn-call { color: var(--sage); background: white; }
+
+    .btn-text:hover, .btn-call:hover { transform: translateY(-2px); }
+
+    .social-container { margin-bottom: 30px; }
+    .social-label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); margin-bottom: 15px; }
+    .social-icons { display: flex; justify-content: center; gap: 20px; }
+    .social-icons a { transition: transform 0.3s ease; }
+    .social-icons a:hover { transform: translateY(-3px); }
+    .social-icons svg { width: 32px; height: 32px; }
+
+    .google-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--sage);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-top: 12px;
+        transition: color 0.3s ease;
+    }
+    .google-link:hover {
+        color: var(--rose-clay);
+    }
+    .google-link img {
+        width: 32px;
+        height: 32px;
+    }
+
+    @media (max-width: 600px) {
+        .action-bar { width: 90%; }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="top-bar">Serving New Braunfels • Gruene • San Marcos • Canyon Lake • San Antonio • Seguin</div>
+
+        <header>
+            <a href="index.html" class="logo">Refined Comfort Aesthetics</a>
+            <nav>
+                <a href="services.html" style="font-size: 0.8rem; font-weight: 600; color: var(--sage); text-decoration: none; border: 1px solid var(--sage); padding: 8px 15px; border-radius: 50px;">SERVICES</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <!-- Updated H1 with keyword integration for better SEO match -->
+            <h1>Glow with Confidence: Electrolysis & Body Contouring in New Braunfels</h1>
+            <div class="script-text">transform your beauty, inside and out</div>
+            <p>Electrolysis • Body Sculpting • Skincare</p>
+        </section>
+
+        <section class="bio-section">
+            <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush, founder and expert aesthetician" loading="lazy">
+            <h2>Expert Care by Courtney Bush</h2>
+            <div style="max-width: 700px; margin: 0 auto; text-align: center; padding: 0 20px;">
+                <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--charcoal);">
+                    With over a decade of dedicated expertise in aesthetics, Courtney Bush has established herself as a leading practitioner for permanent hair removal New Braunfels and non-invasive body sculpting San Antonio area clients seeking lasting confidence through precision hair removal and skin rejuvenation.
+                </p>
+                <p style="font-size: 1.1rem; color: var(--charcoal);">
+                    As the founder of Refined Comfort Aesthetics, Courtney combines a meticulous, technical approach with a warm, boutique-style environment. Specializing in the 'Gold Standard' of permanent hair removal—Electrolysis—she provides tailored treatments designed to meet the unique needs of every client seeking electrolysis and body contouring in New Braunfels and surrounding areas.
+                </p>
+            </div>
+        </section>
+
+        <section class="results-gallery">
+            <h2 style="text-transform: uppercase; letter-spacing: 2px;">Professional Transformations</h2>
+            <div class="gallery-grid">
+                <div class="transformation-card">
+                    <div class="image-comparison">
+                        <img src="media/before-1.jpg" alt="Before body sculpting treatment" loading="lazy">
+                        <img src="media/after-1.jpg" alt="After body sculpting treatment - 4 sessions" loading="lazy">
+                    </div>
+                    <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">BODY SCULPTING: 4 SESSIONS</p>
+                </div>
+                <div class="transformation-card">
+                    <div class="image-comparison">
+                        <img src="media/before-2.jpg" alt="Before electrolysis treatment" loading="lazy">
+                        <img src="media/after-2.jpg" alt="After electrolysis treatment - permanent hair removal results" loading="lazy">
+                    </div>
+                    <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">ELECTROLYSIS: PERMANENT RESULTS</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Boutique Hours</h3>
+                <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
+                <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
+                <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
+            </div>
+            <div class="info-card">
+                <h3>Locations Served</h3>
+                <p>We are located inside Gruene Day Spa in New Braunfels, TX — a cozy and private setting where soft lighting, clean design, and calming energy greet you the moment you walk in.<br>Serving clients seeking permanent hair removal New Braunfels and non-invasive body sculpting San Antonio area from across Comal, Hays, Guadalupe, and Bexar Counties.</p>
+            </div>
+        </section>
+
+        <section class="review-slider">
+    <h2 style="color: white; margin-bottom: 20px; text-transform: uppercase;">Client Reviews</h2>
+    <div class="carousel-wrapper">
+        <button class="nav-btn prev-btn" onclick="scrollCarousel(-300)">❮</button>
+        <div class="review-carousel" id="reviewScroll">
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"Courtney is incredible. I've seen amazing results with my electrolysis."</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Sarah M.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"The most relaxing wood therapy session. Noticeable results immediately."</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Jessica R.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"Professional, clean, and so knowledgeable. Courtney made me feel completely at ease."</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Amanda T.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"I was nervous about permanent hair removal, but Courtney explained everything perfectly. Highly recommend!"</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Elena V.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"Best skincare in New Braunfels. My skin has never looked more radiant."</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Michelle P.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"A hidden gem in Gruene. The boutique experience is so much better than the big clinics."</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Rachel S.</span>
+            </div>
+
+            <div class="review-card">
+                <div style="color: #FFD700; margin-bottom: 10px;">★★★★★</div>
+                <p>"Finally found someone who specializes in electrolysis and actually cares about the results!"</p>
+                <span style="display:block; margin-top:10px; font-weight:600; opacity:0.8;">— Taylor B.</span>
+            </div>
+
+        </div>
+        <button class="nav-btn next-btn" onclick="scrollCarousel(300)">❯</button>
+    </div>
+</section>
+
+        <section class="form-container" style="padding: 80px 20px;">
+            <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase;">Book a Consultation</h2>
+            <form action="https://formspree.io/f/YOUR_ID" method="POST" class="v64-form">
+                <label>Name</label><input type="text" name="name" required>
+                <label>Email</label><input type="email" name="_replyto" required>
+                <label>Primary Concern</label>
+                <select name="service">
+                    <option value="electrolysis">Electrolysis</option>
+                    <option value="body-contouring">Body Sculpting</option>
+                    <option value="facials">Boutique Facials</option>
+                </select>
+                <label>Message</label><textarea name="message" rows="4" required></textarea>
+                <button type="submit">SEND INQUIRY</button>
+            </form>
+        </section>
+
+        <footer style="padding: 60px 20px; text-align: center; background: var(--white); border-top: 2px solid var(--sage);">
+            <div class="social-container">
+                <span class="social-label">Follow us on Social</span>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575054564465" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.998 12c0-6.627-5.372-12-11.999-12s-11.998 5.373-11.998 12c0 5.989 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.863 10.124-11.852z" fill="#1877F2"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/refinedcomfortaesthetics/" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.055 1.17-.248 1.805-.413 2.227-.218.562-.477.96-.897 1.382-.419.419-.818.679-1.381.896-.422.164-1.056.36-2.226.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.055-1.805-.248-2.227-.413-.562-.218-.96-.477-1.382-.897-.419-.419-.679-.818-.896-1.381-.164-.422-.36-1.056-.413-2.226-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.055-1.17.248-1.805.413-2.227.218-.562.477-.96.897-1.382.419-.419.818-.679 1.381-.896.422-.164 1.056-.36 2.226-.413 1.267-.057 1.647-.07 4.851-.07zM12 5.837a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="#E4405F"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <h2 style="color: var(--sage); margin-bottom: 10px;">Refined Comfort Aesthetics</h2>
+            <p>1245 Gruene Rd, New Braunfels, TX 78130</p>
+            <p>(512) 660-7522 | contact@comfortrefined.com</p>
+            
+            <a href="https://www.google.com/maps/place/Refined+Comfort+Aesthetics,+LLC/@29.739733,-98.1064841,17z/data=!3m1!4b1!4m6!3m5!1s0x865ca3d90c61d133:0x108049cfd03afb0f!8m2!3d29.739733!4d-98.1039092!16s%2Fg%2F11ydzl8k1k?entry=ttu" 
+               target="_blank" rel="noopener noreferrer" class="google-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google logo" loading="lazy">
+                Read/Leave Reviews on Google
+            </a>
+        </footer>
+    </div> 
+    
+    <div class="action-bar">
+        <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
+        <a href="sms:5126607522" class="btn btn-text">TEXT US</a>
+    </div>
+
+    <script>
+        function scrollCarousel(amount) {
+            const carousel = document.getElementById('reviewScroll');
+            carousel.scrollBy({ left: amount, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
