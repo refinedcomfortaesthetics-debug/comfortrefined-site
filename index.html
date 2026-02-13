@@ -7,6 +7,9 @@
     <title>Refined Comfort Aesthetics | Electrolysis & Skincare New Braunfels & San Antonio</title>
     <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, Gruene, San Marcos, Canyon Lake, Seguin, and San Antonio.">
     
+    <!-- Added canonical tag for SEO -->
+    <link rel="canonical" href="https://comfortrefined.com/">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -35,17 +38,15 @@
     
     <style>
     :root {
-        --sage: #9caf88;                /* Keep – core brand color, healing/calm */
-        --muted-sage: #8a9b77;          /* Keep for body bg – subtle nature feel */
-        --linen: #fdfaf7;               /* Keep – soft off-white luxury base */
-        --rose-clay: #a67c52;           /* Keep – warm, earthy femininity */
-        --champagne: #f2e8df;           /* Keep – subtle warmth */
-
-        /* New / refined additions for 2025 luxury lift */
-        --taupe: #a39384;               /* Warm neutral – use for subtle borders or secondary text */
-        --soft-gold: #d4af37;           /* Or #c9b98f lighter champagne-gold – accent for CTAs, icons, highlights */
-        --charcoal: #3a3a3a;            /* Darker text for better contrast/readability */
-        --glass: rgba(255, 255, 255, 0.92);  /* Slightly more opaque for stronger glass effect */
+        --sage: #9caf88;
+        --muted-sage: #8a9b77;
+        --linen: #fdfaf7;
+        --rose-clay: #a67c52;
+        --champagne: #f2e8df;
+        --taupe: #a39384;
+        --soft-gold: #d4af37;
+        --charcoal: #3a3a3a;
+        --glass: rgba(255, 255, 255, 0.92);
     }
 
     body { 
@@ -65,15 +66,37 @@
         box-shadow: 0 0 50px rgba(0,0,0,0.15);
         position: relative;
         min-height: 100vh;
-        padding-bottom: 120px;  /* space for fixed action bar */
+        padding-bottom: 120px;
     }
 
     h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
 
     .top-bar { background: var(--sage); color: white; text-align: center; padding: 8px; font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
 
-    header { position: sticky; top: 0; background: var(--glass); backdrop-filter: blur(10px); padding: 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 2px solid var(--sage); }
-    .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; color: var(--sage); text-decoration: none; }
+    header { 
+        position: sticky; 
+        top: 0; 
+        background: var(--glass); 
+        backdrop-filter: blur(10px); 
+        padding: 20px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        z-index: 1000; 
+        border-bottom: 2px solid var(--sage); 
+    }
+    .logo { 
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        letter-spacing: 1px; 
+        color: var(--sage); 
+        text-decoration: none; 
+    }
+
+    nav a:focus, button:focus, .btn:focus {
+        outline: 2px solid var(--soft-gold);
+        outline-offset: 2px;
+    }
 
     .hero { 
         height: 65vh; 
@@ -132,7 +155,13 @@
     .results-gallery { padding: 80px 20px; background: var(--white); text-align: center; border-top: 1px solid var(--champagne); }
     .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1000px; margin: 40px auto 0; }
     @media (min-width: 768px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
-    .transformation-card { background: var(--champagne); padding: 15px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+    .transformation-card { 
+        background: var(--champagne); 
+        padding: 15px; 
+        border-radius: 30px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        transition: transform 0.3s ease; 
+    }
     .transformation-card:hover { transform: scale(1.02); }
     .image-comparison { display: flex; gap: 10px; justify-content: center; }
     .image-comparison img { width: 48%; border-radius: 20px; aspect-ratio: 3/4; object-fit: cover; border: 3px solid var(--white); }
@@ -156,9 +185,10 @@
     .v64-form { max-width: 500px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
     .v64-form label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 0.8rem; color: var(--sage); text-transform: uppercase; }
     .v64-form input, .v64-form select, .v64-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
-    .v64-form button { width: 100%; padding: 18px; background: var(--sage); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-transform: uppercase; }
+    .v64-form button { width: 100%; padding: 18px; background: linear-gradient(135deg, var(--sage), var(--soft-gold)); color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; text-transform: uppercase; transition: all 0.3s ease; }
+    .v64-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); opacity: 0.95; }
+    .v64-form button:active { transform: translateY(0); box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2); }
 
-    /* FIXED ACTION BAR - MOBILE FLOATING CALL/TEXT BAR */
     .action-bar { 
         position: fixed; 
         bottom: 25px; 
@@ -187,11 +217,16 @@
         transition: all 0.3s ease;
     }
 
-    .btn-text { background: var(--sage); color: white; }
+    .btn-text { 
+        background: linear-gradient(135deg, var(--sage), var(--soft-gold)); 
+        color: white; 
+    }
     .btn-call { color: var(--sage); background: white; }
 
+    .btn-text:hover, .btn-call:hover { transform: translateY(-2px); }
+
     .social-container { margin-bottom: 30px; }
-    .social-label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text); margin-bottom: 15px; }
+    .social-label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--charcoal); margin-bottom: 15px; }
     .social-icons { display: flex; justify-content: center; gap: 20px; }
     .social-icons a { transition: transform 0.3s ease; }
     .social-icons a:hover { transform: translateY(-3px); }
@@ -216,30 +251,10 @@
         height: 32px;
     }
 
-    /* ============================================= */
-    /* Gradient upgrade for main CTAs (SEND INQUIRY + TEXT US) */
-    /* ============================================= */
-    .v64-form button,
-    .btn-text {
-        background: linear-gradient(135deg, var(--sage), var(--soft-gold));
-        color: white;
+    @media (max-width: 600px) {
+        .action-bar { width: 90%; }
     }
-
-    /* Optional: subtle hover/active effects for premium feel */
-    .v64-form button:hover,
-    .btn-text:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-        opacity: 0.95;
-    }
-
-    .v64-form button:active,
-    .btn-text:active {
-        transform: translateY(0);
-        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
-    }
-
-</style>
+    </style>
     
 </head>
 <body>
@@ -255,20 +270,21 @@
         </header>
 
         <section class="hero">
-            <h1>Glow with Confidence</h1>
+            <!-- Updated H1 with keyword integration for better SEO match -->
+            <h1>Glow with Confidence: Electrolysis & Body Contouring in New Braunfels</h1>
             <div class="script-text">transform your beauty, inside and out</div>
             <p>Electrolysis • Body Sculpting • Skincare</p>
         </section>
 
         <section class="bio-section">
-            <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush">
+            <img src="media/courtney-profile.png" class="profile-img" alt="Courtney Bush, founder and expert aesthetician" loading="lazy">
             <h2>Expert Care by Courtney Bush</h2>
             <div style="max-width: 700px; margin: 0 auto; text-align: center; padding: 0 20px;">
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">
-                    With over a decade of dedicated expertise in aesthetics, Courtney Bush has established herself as a leading practitioner for those seeking lasting confidence through precision hair removal and skin rejuvenation.
+                <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--charcoal);">
+                    With over a decade of dedicated expertise in aesthetics, Courtney Bush has established herself as a leading practitioner for permanent hair removal New Braunfels and non-invasive body sculpting San Antonio area clients seeking lasting confidence through precision hair removal and skin rejuvenation.
                 </p>
-                <p style="font-size: 1.1rem;">
-                    As the founder of Refined Comfort Aesthetics, Courtney combines a meticulous, technical approach with a warm, boutique-style environment. Specializing in the 'Gold Standard' of permanent hair removal—Electrolysis—she provides tailored treatments designed to meet the unique needs of every client.
+                <p style="font-size: 1.1rem; color: var(--charcoal);">
+                    As the founder of Refined Comfort Aesthetics, Courtney combines a meticulous, technical approach with a warm, boutique-style environment. Specializing in the 'Gold Standard' of permanent hair removal—Electrolysis—she provides tailored treatments designed to meet the unique needs of every client seeking electrolysis and body contouring in New Braunfels and surrounding areas.
                 </p>
             </div>
         </section>
@@ -278,15 +294,15 @@
             <div class="gallery-grid">
                 <div class="transformation-card">
                     <div class="image-comparison">
-                        <img src="media/before-1.jpg" alt="Before Body Sculpting">
-                        <img src="media/after-1.jpg" alt="After Body Sculpting">
+                        <img src="media/before-1.jpg" alt="Before body sculpting treatment" loading="lazy">
+                        <img src="media/after-1.jpg" alt="After body sculpting treatment - 4 sessions" loading="lazy">
                     </div>
                     <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">BODY SCULPTING: 4 SESSIONS</p>
                 </div>
                 <div class="transformation-card">
                     <div class="image-comparison">
-                        <img src="media/before-2.jpg" alt="Before Electrolysis">
-                        <img src="media/after-2.jpg" alt="After Electrolysis">
+                        <img src="media/before-2.jpg" alt="Before electrolysis treatment" loading="lazy">
+                        <img src="media/after-2.jpg" alt="After electrolysis treatment - permanent hair removal results" loading="lazy">
                     </div>
                     <p style="margin-top:15px; font-weight:600; color: var(--rose-clay); font-size: 0.8rem;">ELECTROLYSIS: PERMANENT RESULTS</p>
                 </div>
@@ -302,7 +318,7 @@
             </div>
             <div class="info-card">
                 <h3>Locations Served</h3>
-                <p>We are located inside Gruene Day Spa in New Braunfels, TX — a cozy and private setting where soft lighting, clean design, and calming energy greet you the moment you walk in.<br>Serving clients from across Comal, Hays, Guadalupe, and Bexar Counties.</p>
+                <p>We are located inside Gruene Day Spa in New Braunfels, TX — a cozy and private setting where soft lighting, clean design, and calming energy greet you the moment you walk in.<br>Serving clients seeking permanent hair removal New Braunfels and non-invasive body sculpting San Antonio area from across Comal, Hays, Guadalupe, and Bexar Counties.</p>
             </div>
         </section>
 
@@ -358,6 +374,7 @@
         <button class="nav-btn next-btn" onclick="scrollCarousel(300)">❯</button>
     </div>
 </section>
+
         <section class="form-container" style="padding: 80px 20px;">
             <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase;">Book a Consultation</h2>
             <form action="https://formspree.io/f/YOUR_ID" method="POST" class="v64-form">
@@ -393,19 +410,17 @@
             
             <a href="https://www.google.com/maps/place/Refined+Comfort+Aesthetics,+LLC/@29.739733,-98.1064841,17z/data=!3m1!4b1!4m6!3m5!1s0x865ca3d90c61d133:0x108049cfd03afb0f!8m2!3d29.739733!4d-98.1039092!16s%2Fg%2F11ydzl8k1k?entry=ttu" 
                target="_blank" rel="noopener noreferrer" class="google-link">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google logo" loading="lazy">
                 Read/Leave Reviews on Google
             </a>
         </footer>
     </div> 
     
-    <!-- FIXED FLOATING ACTION BAR (Call + Text) -->
     <div class="action-bar">
         <a href="tel:5126607522" class="btn btn-call">CALL NOW</a>
         <a href="sms:5126607522" class="btn btn-text">TEXT US</a>
     </div>
 
-    <!-- Optional: Simple carousel scroll function (if you want arrow buttons to work better) -->
     <script>
         function scrollCarousel(amount) {
             const carousel = document.getElementById('reviewScroll');
