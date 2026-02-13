@@ -49,16 +49,28 @@
             --linen: #fdfaf7;
             --text: #4a4a4a;
             --white: #ffffff;
-            --refined-earth: #a67c52; /* Deepened from the previous clay */
+            --refined-earth: #a67c52;
             --champagne: #f2e8df; 
         }
 
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            background-color: var(--linen);
+            background-color: var(--muted-sage); /* Matches index.html exterior */
             color: var(--text);
-            padding-bottom: 120px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Main frame to match index.html */
+        .page-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            background-color: var(--linen);
+            box-shadow: 0 0 50px rgba(0,0,0,0.2);
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 150px; /* Space for the floating button */
         }
 
         h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--sage); }
@@ -145,11 +157,14 @@
             box-shadow: 0 4px 10px rgba(156, 175, 136, 0.3);
         }
 
+        /* Action Bar constrained to the 1000px frame */
         .action-bar {
             position: fixed;
             bottom: 20px;
-            left: 20px;
-            right: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 960px; /* Fits inside the 1000px container with margins */
             background: var(--sage);
             color: white;
             text-align: center;
@@ -163,11 +178,12 @@
             transition: transform 0.2s ease;
         }
         
-        .action-bar:active { transform: scale(0.98); }
+        .action-bar:active { transform: translateX(-50%) scale(0.98); }
     </style>
 </head>
 <body>
 
+<div class="page-wrapper">
     <header>
         <a href="index.html" class="back-link">← HOME</a>
     </header>
@@ -333,6 +349,7 @@
     <a href="sms:+15126607522?body=Hi Courtney, I'd like to book..." class="action-bar">
         BOOK AN APPOINTMENT
     </a>
+</div>
 
     <script>
         function toggleInfo(id) {
