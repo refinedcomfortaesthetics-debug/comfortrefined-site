@@ -184,7 +184,11 @@
     @media (min-width: 768px) { .info-grid { grid-template-columns: 1fr 1fr; } }
     .info-card { background: white; padding: 35px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid rgba(156, 175, 136, 0.2); }
     .info-card h3 { color: var(--rose-clay); margin-top: 0; border-bottom: 1px solid var(--linen); padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; font-size: 1.1rem; }
-    .info-card p { margin: 8px 0; font-size: 0.95rem; display: flex; justify-content: space-between; }
+    /* General style for all paragraphs in info cards */
+.info-card p { margin: 8px 0; font-size: 0.95rem; line-height: 1.6; }
+
+/* ONLY apply the flex 'space-between' to the hours list */
+.hours-list p { display: flex; justify-content: space-between; }
 
     .review-slider { background: var(--sage); color: white; padding: 80px 0; text-align: center; }
     .carousel-wrapper { position: relative; max-width: 1200px; margin: 0 auto; }
@@ -322,12 +326,11 @@
         </section>
 
         <section class="info-grid">
-            <div class="info-card">
-                <h3>Boutique Hours</h3>
-                <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
-                <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
-                <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
-            </div>
+            <div class="info-card hours-list"> <h3>Boutique Hours</h3>
+    <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
+    <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
+    <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
+</div>
             <div class="info-card">
                 <h3>Locations Served</h3>
                 <p>We are located inside Gruene Day Spa in New Braunfels, TX — a cozy and private setting. Just a short drive for clients seeking expert <strong>body contouring in San Antonio</strong> or <strong>permanent hair removal in San Marcos</strong> across Comal, Hays, Guadalupe, and Bexar Counties.</p>
