@@ -398,12 +398,20 @@
         </section>
         
         <footer style="padding: 60px 20px; text-align: center; background: var(--white); border-top: 2px solid var(--sage);">
-            <p style="margin-bottom: 30px; font-style: italic; font-size: 0.9rem;">
+            <p style="margin-bottom: 30px; font-style: italic; font-size: 0.9rem; color: var(--charcoal);">
     Want exclusive ritual tips? 
-    <a href="javascript:void(0);" onclick="ml('show', '6VuDOq', true)" style="color: var(--sage); text-decoration: underline; font-weight: 600; margin-left: 5px;">
+    <span id="inner-circle-trigger" style="color: var(--sage); cursor: pointer; text-decoration: underline; font-weight: 600; margin-left: 5px;">
         Join the Inner Circle
-    </a>
+    </span>
 </p>
+
+<script>
+    // This connects your text to the MailerLite Popup
+    document.getElementById('inner-circle-trigger').addEventListener('click', function() {
+        // Replace '6VuDOq' with your NEW Popup ID if it changed
+        ml('show', '6VuDOq', true);
+    });
+</script>
             <div class="social-container">
                 <span class="social-label">Follow us on Social</span>
                 <div class="social-icons">
@@ -441,4 +449,5 @@
     </script>
 </body>
 </html>
+
 
