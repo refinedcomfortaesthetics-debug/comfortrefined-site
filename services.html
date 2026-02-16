@@ -440,7 +440,7 @@
     </footer>
 </div>
 
-<a href="sms:+15126607522?body=Hi Courtney, I'd like to book..." class="action-bar">
+<a href="index.html#booking" class="action-bar">
     BOOK AN APPOINTMENT
 </a>
 
@@ -462,7 +462,26 @@
     }
 </script>
 
+<script>
+    function toggleInfo(id) {
+        var x = document.getElementById(id);
+        // Find the button that called this function
+        var btn = event.currentTarget;
+        
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            // Swap minus back to plus
+            btn.innerHTML = btn.innerHTML.replace('-', '+');
+        } else {
+            x.style.display = "block";
+            // Swap plus to minus
+            btn.innerHTML = btn.innerHTML.replace('+', '-');
+        }
+    }
+</script>
+
 </body>
 </html>
+
 
 
