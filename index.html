@@ -382,20 +382,32 @@
             </div>
         </section>
 
+        <!-- ============================================================
+             BOOKING SECTION
+             - Changed from hardcoded "30min" event type to the full
+               "refined-comfort" profile page, which dynamically shows
+               ALL event types you have configured in Cal.com.
+             - No more HTML changes needed when you add/remove services
+               in Cal.com — it will update automatically here.
+        ============================================================ -->
         <section id="booking" style="padding: 40px 20px; background: var(--linen);">
-    <h2 style="text-align: center; margin-bottom: 20px; text-transform: uppercase;">Book Your Experience</h2>
-    <div style="width:100%; min-height:650px; overflow: hidden;" id="my-cal-inline-30min"></div>
-    <script type="text/javascript">
-      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", "30min", {origin:"https://app.cal.com"});
-      Cal.ns["30min"]("inline", {
-        elementOrSelector: "#my-cal-inline-30min",
-        calLink: "refined-comfort/30min",
-        config: { "layout": "month_view", "theme": "light" }
-      });
-      Cal.ns["30min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
-    </script>
-</section>
+            <h2 style="text-align: center; margin-bottom: 20px; text-transform: uppercase;">Book Your Experience</h2>
+            <div style="width:100%; min-height:650px; overflow: hidden;" id="my-cal-inline"></div>
+            <script type="text/javascript">
+              (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+              // Initialise without a specific event type — loads your full booking profile
+              Cal("init", {origin: "https://app.cal.com"});
+
+              Cal("inline", {
+                elementOrSelector: "#my-cal-inline",
+                calLink: "refined-comfort", // ← Full profile: shows ALL your event types
+                config: { "layout": "month_view", "theme": "light" }
+              });
+
+              Cal("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+            </script>
+        </section>
         
         <footer style="padding: 60px 20px; text-align: center; background: var(--white); border-top: 2px solid var(--sage);">
             <p style="margin-bottom: 30px; font-style: italic; font-size: 0.9rem; color: var(--charcoal);">
@@ -449,6 +461,3 @@
     </script>
 </body>
 </html>
-
-
-
