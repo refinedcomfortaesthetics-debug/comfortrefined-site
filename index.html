@@ -6,19 +6,29 @@
     
     <title>Electrolysis & Body Contouring | Refined Comfort New Braunfels</title>
     <meta name="description" content="Expert Electrolysis, Body Contouring, and Skincare at Refined Comfort Aesthetics. Serving New Braunfels, Gruene, San Marcos, Canyon Lake, Seguin, and San Antonio.">
-    
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://comfortrefined.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Electrolysis & Body Contouring | Refined Comfort Aesthetics">
+    <meta property="og:description" content="Expert Electrolysis, Body Contouring, and Skincare in New Braunfels TX. Serving Gruene, San Marcos, Canyon Lake, Seguin, and San Antonio.">
+    <meta property="og:image" content="https://comfortrefined.com/media/courtney-profile.png">
+    <meta property="og:url" content="https://comfortrefined.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Electrolysis & Body Contouring | Refined Comfort Aesthetics">
+    <meta name="twitter:description" content="Expert Electrolysis, Body Contouring, and Skincare in New Braunfels TX.">
+    <meta name="twitter:image" content="https://comfortrefined.com/media/courtney-profile.png">
+
+    <!-- Favicons -->
     <link rel="icon" href="/favicon-512x512.png" type="image/png" sizes="512x512">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/favicon-512x512.png" sizes="180x180">
     
-    <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2115167');
-</script>
-    
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,9 +58,29 @@
     }
     </script>
     
+    <!-- Google Fonts with preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
+    /* ── Skip Link ── */
+    .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        background: var(--soft-gold);
+        color: white;
+        padding: 10px 18px;
+        border-radius: 0 0 8px 8px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-decoration: none;
+        z-index: 99999;
+        transition: top 0.2s ease;
+    }
+    .skip-link:focus { top: 0; }
+
     :root {
         --sage: #9caf88;
         --muted-sage: #8a9b77;
@@ -185,10 +215,10 @@
     .info-card { background: white; padding: 35px; border-radius: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid rgba(156, 175, 136, 0.2); }
     .info-card h3 { color: var(--rose-clay); margin-top: 0; border-bottom: 1px solid var(--linen); padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; font-size: 1.1rem; }
     /* General style for all paragraphs in info cards */
-.info-card p { margin: 8px 0; font-size: 0.95rem; line-height: 1.6; }
+    .info-card p { margin: 8px 0; font-size: 0.95rem; line-height: 1.6; }
 
-/* ONLY apply the flex 'space-between' to the hours list */
-.hours-list p { display: flex; justify-content: space-between; }
+    /* ONLY apply the flex 'space-between' to the hours list */
+    .hours-list p { display: flex; justify-content: space-between; }
 
     .review-slider { background: var(--sage); color: white; padding: 80px 0; text-align: center; }
     .carousel-wrapper { position: relative; max-width: 1200px; margin: 0 auto; }
@@ -269,6 +299,21 @@
         height: 32px;
     }
 
+    .footer-legal {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid var(--champagne);
+        font-size: 0.78rem;
+        color: #aaa;
+    }
+    .footer-legal a {
+        color: #aaa;
+        text-decoration: underline;
+    }
+    .footer-legal a:hover {
+        color: var(--sage);
+    }
+
     @media (max-width: 600px) {
         .action-bar { width: 90%; }
     }
@@ -276,17 +321,22 @@
 </head>
 <body>
 
+    <!-- Skip to main content (accessibility) -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <div class="main-container">
         <div class="top-bar">Serving New Braunfels • Gruene • San Marcos • Canyon Lake • San Antonio • Seguin</div>
 
         <header>
             <a href="index.html" class="logo">Refined Comfort Aesthetics</a>
             <nav>
-                <a href="services.html" style="font-size: 0.8rem; font-weight: 600; color: var(--sage); text-decoration: none; border: 1px solid var(--sage); padding: 8px 15px; border-radius: 50px;">SERVICES</a>
+                <a href="services.html" aria-current="false" style="font-size: 0.8rem; font-weight: 600; color: var(--sage); text-decoration: none; border: 1px solid var(--sage); padding: 8px 15px; border-radius: 50px;">SERVICES</a>
             </nav>
         </header>
 
-        <section class="hero">
+        <main id="main">
+
+        <section class="hero" role="img" aria-label="Electrolysis and body contouring treatments at Refined Comfort Aesthetics in New Braunfels TX">
             <h1>Glow with Confidence: Electrolysis & Body Contouring in New Braunfels</h1>
             <div class="script-text">transform your beauty, inside and out</div>
             <p>Electrolysis • Body Sculpting • Skincare</p>
@@ -326,11 +376,12 @@
         </section>
 
         <section class="info-grid">
-            <div class="info-card hours-list"> <h3>Boutique Hours</h3>
-    <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
-    <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
-    <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
-</div>
+            <div class="info-card hours-list">
+                <h3>Boutique Hours</h3>
+                <p><span>Mon, Tue, Thu:</span> <span>9 AM - 6 PM</span></p>
+                <p><span>Fri, Sat:</span> <span>8 AM - 3 PM</span></p>
+                <p><span>Wed, Sun:</span> <span style="color: #999;">CLOSED</span></p>
+            </div>
             <div class="info-card">
                 <h3>Locations Served</h3>
                 <p>We are located inside Gruene Day Spa in New Braunfels, TX — a cozy and private setting. Just a short drive for clients seeking expert <strong>body contouring in San Antonio</strong> or <strong>permanent hair removal in San Marcos</strong> across Comal, Hays, Guadalupe, and Bexar Counties.</p>
@@ -411,26 +462,19 @@
         
         <footer style="padding: 60px 20px; text-align: center; background: var(--white); border-top: 2px solid var(--sage);">
             <p style="margin-bottom: 30px; font-style: italic; font-size: 0.9rem; color: var(--charcoal);">
-    Want exclusive ritual tips? 
-    <span id="inner-circle-trigger" style="color: var(--sage); cursor: pointer; text-decoration: underline; font-weight: 600; margin-left: 5px;">
-        Join the Inner Circle
-    </span>
-</p>
+                Want exclusive ritual tips? 
+                <span id="inner-circle-trigger" style="color: var(--sage); cursor: pointer; text-decoration: underline; font-weight: 600; margin-left: 5px;">
+                    Join the Inner Circle
+                </span>
+            </p>
 
-<script>
-    // This connects your text to the MailerLite Popup
-    document.getElementById('inner-circle-trigger').addEventListener('click', function() {
-        // Replace '6VuDOq' with your NEW Popup ID if it changed
-        ml('show', '6VuDOq', true);
-    });
-</script>
             <div class="social-container">
                 <span class="social-label">Follow us on Social</span>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=61575054564465" target="_blank" aria-label="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61575054564465" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.998 12c0-6.627-5.372-12-11.999-12s-11.998 5.373-11.998 12c0 5.989 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.863 10.124-11.852z" fill="#1877F2"/></svg>
                     </a>
-                    <a href="https://www.instagram.com/refinedcomfortaesthetics/" target="_blank" aria-label="Instagram">
+                    <a href="https://www.instagram.com/refinedcomfortaesthetics/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.055 1.17-.248 1.805-.413 2.227-.218.562-.477.96-.897 1.382-.419.419-.818.679-1.381.896-.422.164-1.056.36-2.226.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.055-1.805-.248-2.227-.413-.562-.218-.96-.477-1.382-.897-.419-.419-.679-.818-.896-1.381-.164-.422-.36-1.056-.413-2.226-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.055-1.17.248-1.805.413-2.227.218-.562.477-.96.897-1.382.419-.419.818-.679 1.381-.896.422-.164 1.056-.36 2.226-.413 1.267-.057 1.647-.07 4.851-.07zM12 5.837a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="#E4405F"/></svg>
                     </a>
                 </div>
@@ -438,14 +482,20 @@
 
             <h2 style="color: var(--sage); margin-bottom: 10px;">Refined Comfort Aesthetics</h2>
             <p>1245 Gruene Rd, New Braunfels, TX 78130</p>
-            <p>(512) 660-7522 | contact@comfortrefined.com</p>
+            <p>(512) 660-7522 | <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71121e1f0510120531121e1c171e0305031417181f14155f121e1c">[email&#160;protected]</a></p>
             
             <a href="https://maps.app.goo.gl/P5N8ZghgxAULMJry7" 
                target="_blank" rel="noopener noreferrer" class="google-link">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google logo" loading="lazy">
                 Read/Leave Reviews on Google
             </a>
+
+            <div class="footer-legal">
+                <p>&copy; 2025 Refined Comfort Aesthetics. All rights reserved. &nbsp;|&nbsp; <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
         </footer>
+
+        </main>
     </div> 
     
     <div class="action-bar">
@@ -453,14 +503,27 @@
         <a href="sms:5126607522" class="btn btn-text">TEXT US</a>
     </div>
 
+    <!-- MailerLite (moved to end of body for faster page render) -->
     <script>
-        function scrollCarousel(amount) {
-            const carousel = document.getElementById('reviewScroll');
-            carousel.scrollBy({ left: amount, behavior: 'smooth' });
-        }
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2115167');
     </script>
+
+    <script>
+    // Carousel scroll
+    function scrollCarousel(amount) {
+        document.getElementById('reviewScroll').scrollBy({ left: amount, behavior: 'smooth' });
+    }
+
+    // MailerLite popup trigger
+    document.getElementById('inner-circle-trigger').addEventListener('click', function() {
+        ml('show', '6VuDOq', true);
+    });
+    </script>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>
-
-
-
