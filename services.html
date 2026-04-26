@@ -477,8 +477,51 @@
 </div><!-- .page-wrapper -->
 
 <!-- Fixed Action Bar -->
-<a href="index.html#booking" class="action-bar" style="padding: 18px; background: linear-gradient(135deg, var(--sage), var(--terracotta), var(--espresso));">Book Your Session → Free Consult</a>
+<div class="action-bar" id="action-bar-3">
+    <a href="tel:5126607522" class="btn btn-call">Call Now</a>
+    <a href="index.html#booking" class="btn btn-book">Book Now</a>
+    <a href="sms:5126607522" class="btn btn-text">Text Us</a>
+</div>
 
+<style>
+    /* ── 3-button pill overrides ── */
+    #action-bar-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 540px;
+    }
+    .btn-book {
+        background: var(--sage);
+        color: var(--white);
+        border-left: 1px solid rgba(255,255,255,0.15);
+        border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-book:hover { background: var(--sage-lt); }
+    /* Tighten text on mid-small screens (phones 400px and under) */
+    @media (max-width: 400px) {
+        #action-bar-3 .btn {
+            font-size: 0.62rem;
+            letter-spacing: 1px;
+            padding: 16px 8px;
+        }
+    }
+    /* Very small phones (under 340px) — stack into 2 rows: Book Now full-width on top */
+    @media (max-width: 339px) {
+        #action-bar-3 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+        #action-bar-3 .btn-book {
+            grid-column: 1 / -1;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+        }
+        #action-bar-3 .btn-call { order: 2; }
+        #action-bar-3 .btn-text { order: 3; }
+    }
+</style>
 
 <!-- MailerLite -->
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
