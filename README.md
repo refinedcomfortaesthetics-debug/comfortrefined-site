@@ -1,4 +1,4 @@
-# Refined Comfort Aesthetics — Website 
+# Refined Comfort Aesthetics — Website  
 
 A high-performance, static marketing site for **Refined Comfort Aesthetics**, a boutique studio in New Braunfels, TX specializing in permanent hair removal, body contouring, and advanced facial sculpting.
 
