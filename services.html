@@ -16,15 +16,25 @@ ml('account', '2115167');
 </script>
 
     <!-- MailerLite Newsletter Signup Tracking -->
+<!-- MailerLite Newsletter Signup Tracking -->
 <script>
-  window.addEventListener('message', function(event) {
-    if (event.data && event.data.type === 'ml-form-success') {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        'event': 'newsletter_signup',
-        'form_id': '3iOwct'
-      });
-    }
+  window.addEventListener('load', function() {
+    var checkML = setInterval(function() {
+      if (typeof ml === 'function') {
+        clearInterval(checkML);
+        var originalML = window.ml;
+        window.ml = function() {
+          if (arguments[0] === 'subscribe') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'newsletter_signup',
+              'form_id': '3iOwct'
+            });
+          }
+          return originalML.apply(this, arguments);
+        };
+      }
+    }, 100);
   });
 </script>
 
