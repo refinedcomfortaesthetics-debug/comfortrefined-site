@@ -15,6 +15,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ml('account', '2115167');
 </script>
 
+    <script>
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'ml-form-success') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'newsletter_signup',
+        'form_id': '3iOwct'
+      });
+    }
+  });
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
